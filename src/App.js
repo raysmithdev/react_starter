@@ -17,18 +17,15 @@ class App extends Component {
   }
 
   addTodo() {
-
   }
 
   deleteToDo() {
-
   }
 
   render() { //return UI part
     return (
       <div className="App">
         <AddTodo addTodo={() => this.addTodo()} />
-        <AddTodo addTodo={this.addTodo} />        
         <List todos={this.state.todos} />
       </div>
     );
